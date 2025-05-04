@@ -31,7 +31,7 @@ try:
 
     # 2. Display Genre Records
     print("-- DISPLAYING Genre RECORDS --")
-    cursor.execute("SELECT genre_id, genre_name FROM genre")
+    cursor.execute("SELECT * FROM genre")
     genres = cursor.fetchall()
     for genre in genres:
         print(f"Genre ID: {genre[0]}")
